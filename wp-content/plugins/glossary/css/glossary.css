@@ -1,0 +1,76 @@
+.alpha-wrapper {
+    padding-top: 40px;
+}
+
+.alpha {
+    border-top: 1px solid #E7E7E7;
+    padding: 30px 30px 50px;
+    position: relative;
+    display: flex;
+}
+
+.alpha-wrapper div:nth-child(2) {
+    border-top: none;
+}
+
+.alpha h2.alpha-letter {
+    background: #FAFAFA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    min-width: 78px;
+    height: 78px;
+}
+
+.alpha ul {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+    padding-left: 80px;
+    margin: 0px;
+    width: 100%;
+}
+
+.alpha ul li {
+    list-style-type: none;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    break-inside: avoid;
+    line-height: 2.2rem;
+}
+
+.alpha a {
+    color: #464646;
+    text-transform: capitalize;
+    text-decoration: none !important;
+}
+
+.alpha a:hover {
+    color: #FF6200;
+    text-decoration: none;
+}
+
+.alpha-search input {
+    background: url(../images/search-light-grey.svg) no-repeat 22px center;
+    background-size: 18px;
+    padding: 15px 12px 15px 60px;
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .alpha {
+        flex-direction: column;
+        padding: 30px 20px 40px;
+    }
+    .alpha h2.alpha-letter {
+        height: 58px;
+        min-width: 58px;
+        width: 58px;
+    }
+    .alpha ul {
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+  }
